@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300;400&family=Ubuntu&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    padding: 3.5rem 20rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    color: #FB2576;
+    gap: 3.25rem;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav li:hover {
+    color: #dd729b;
+}
+
