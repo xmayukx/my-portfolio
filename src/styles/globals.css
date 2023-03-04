@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Ubuntu&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 body {
-  background-color: #0A2647;
+  background-color: black;
 }
 
 .montse {
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  /* justify-content: center; */
+}
+
+.oswal {
+  font-family: 'Oswald', sans-serif;
+}
+
+.robo {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.inco {
+  font-family: 'Inconsolata', monospace;
+}
+
+.merri {
+  font-family: 'Merriweather Sans', sans-serif;
 }

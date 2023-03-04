@@ -3,41 +3,26 @@ import { Inter } from "@next/font/google";
 import React, { useEffect, useState } from "react";
 import { style } from "@mui/system";
 import { ClassNames } from "@emotion/react";
-import SwipeableEdgeDrawer from "./Drawer";
+import Burger from "./Burger";
+import Link from "next/link";
 
 export function Navbar(props) {
-  const [showNav, setshowNav] = useState(true);
-
-  let height = props.dimension.height;
-  let width = props.dimension.width;
-
-  // useEffect(() => {
-  //   if (height <= 1024 || width <= 768) {
-  //     setshowNav(false);
-  //   }
-  // }, []);
-
   return (
     <div>
       <nav
-        className={styles.nav1}
-        // style={{ display: !showNav ? "none" : "" }}
-      >
-        <ul>
+        className="flex lg:text-base lg:py-20 p-12 items-center justify-center text-amber-300 robo">
+        <ul className="flex list-none lg:gap-32 gap-6 lg:text-sm text-sm font-bold">
           <li>
-            <a href="/projects">PROJECTS</a>
+            <Link href="/about">01.<span className="text-slate-50 lg:hover:text-amber-300">About</span></Link>
           </li>
           <li>
-            <a href="/blog">BLOG</a>
+            <Link href="/about">02.<span className="text-slate-50 lg:hover:text-amber-300">Work</span></Link>
           </li>
           <li>
-            <a href="/career">CAREER</a>
+            <Link href="/about">03.<span className="text-slate-50 lg:hover:text-amber-300">Contact</span></Link>
           </li>
           <li>
-            <a href="/about">ABOUT ME</a>
-          </li>
-          <li>
-            <a href="/contact">CONTACT</a>
+            <Link href="/about">04.<span className="text-slate-50 lg:hover:text-amber-300">Resume</span></Link>
           </li>
         </ul>
       </nav>
