@@ -1,12 +1,7 @@
 import useSWR from "swr";
 import Image from "next/image";
 const fetcher = async (url) => await fetch(url).then((res) => res.json()).catch((err) => console.log(err));
-// const fetcher = async (url) => {
-//     const res = await fetch(url);
-//     const data = await res.json();
-//     console.log(data); // log the entire response object
-//     return data;
-//   };
+
 
 export default function About() {
 
@@ -15,14 +10,14 @@ export default function About() {
         fetcher,
     );
 
-    // console.log(data.avatar_url);
+    
 
     return (
 
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-1">
 
-            {/* About Me----> */}
+            
             <div className="text-left merri text-slate-50 leading-1 pl-7">
                 <div>
                     <span className="text-slate-50  text-2xl font-bold mb-4"><span className="text-amber-300 robo font-normal text-lg">01. </span>About Me</span>

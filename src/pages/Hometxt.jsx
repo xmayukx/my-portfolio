@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import greet from "./intro";
 import About from "./about";
-// import data from "./api/hello";
+
 
 
 export function Hometxt() {
-  // const properties = Object.keys(greet);
-  // console.log(greet);
+
 
 
   return (
@@ -28,11 +27,10 @@ export function Hometxt() {
               Transforming ideas into seamless 🚀 digital experiences 🌐 through full-stack development 🖥️ and occasional design expertise 🎨.
             </p>
           </div>
-          // Section-2
-          <About/>
-          // Section-3
 
-          //Section 4
+          <About />
+
+
 
         </div>
         {/* <div className="montse p-4 w-3/6 mx-auto text-lime-50 relative bottom-36 leading-relaxed bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
