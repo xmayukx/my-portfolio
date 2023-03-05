@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import greet from "./intro";
 import About from "./about";
 
 
