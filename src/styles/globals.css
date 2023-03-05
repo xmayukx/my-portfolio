@@ -27,12 +27,3 @@ body {
 .merri {
   font-family: 'Merriweather Sans', sans-serif;
 }
-
-@layer utilities {
-  .filter-none {
-    filter: none;
-  }
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
-}

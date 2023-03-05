@@ -24,9 +24,9 @@ export default function About() {
                 </div>
                 <div className="mr-7 lg:mr-[5rem] mt-10 font-light">
                     <p className="mb-6">Hi there! 👋 My name is Mayukh Hazari, and I am a full stack web developer with a passion for creating dynamic and engaging web applications.💻 <br /> </p>
-                    <p className="mb-6">Whether it's building responsive user interfaces or developing robust backend systems, I love the challenge of bringing innovative ideas to life through code. 💡 As a second year student, I am always seeking out new opportunities to expand my skillset and tackle exciting projects.</p>
-                    <p className="mb-12">🚀 With a keen eye for design and a commitment to delivering high-quality work, I am confident that I can help bring your web development goals to life. So let's collaborate and create something amazing together! 🤝</p>
-                    <p className="mb-4"> Here some technologies I've been working with recently- </p>
+                    <p className="mb-6">Whether it is building responsive user interfaces or developing robust backend systems, I love the challenge of bringing innovative ideas to life through code. 💡 As a second year student, I am always seeking out new opportunities to expand my skillset and tackle exciting projects.</p>
+                    <p className="mb-12">🚀 With a keen eye for design and a commitment to delivering high-quality work, I am confident that I can help bring your web development goals to life. So let&apos;s collaborate and create something amazing together! 🤝</p>
+                    <p className="mb-4"> Here some technologies I have been working with recently- </p>
                     <ul className="grid grid-cols-2 gap-2 inco mb-12">
                         <li>- Node.js</li>
                         <li>- Next.js</li>
