@@ -12,7 +12,6 @@ export function Hometxt() {
     <div>
       <div>
         <div className="lg:pl-72 lg:pt-2 lg:px-12 leading-relaxed lg:text-justify">
-        // Section-1
           <div className="mb-56 mt-52 leading-1 pl-7">
             <h3 className="text-yellow-400 robo lg:text-lg text-xl ">Hi, my name is</h3>
 
@@ -33,9 +32,7 @@ export function Hometxt() {
 
 
         </div>
-        {/* <div className="montse p-4 w-3/6 mx-auto text-lime-50 relative bottom-36 leading-relaxed bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          {greet.about}
-        </div> */}
+        
 
       </div>
     </div>
