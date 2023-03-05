@@ -7,11 +7,12 @@ import Burger from "./Burger";
 import Link from "next/link";
 
 export function Navbar(props) {
+  const hide = "invisible lg:visible";
   return (
-    <div>
+    <div className="relative z-40">
       <nav
-        className="flex lg:text-base lg:py-20 p-12 items-center justify-center text-amber-300 robo">
-        <ul className="flex list-none lg:gap-32 gap-6 lg:text-sm text-sm font-bold">
+        className="fixed top-0 left-0 right-0 flex lg:text-base lg:py-16 p-12 items-center justify-center text-amber-300 robo backdrop-blur-lg bg-white/5">
+        <ul className=" flex list-none lg:gap-32 gap-6 lg:text-sm text-xs font-bold">
           <li>
             <Link href="/about">01.<span className="text-slate-50 lg:hover:text-amber-300">About</span></Link>
           </li>
