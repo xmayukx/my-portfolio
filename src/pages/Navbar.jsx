@@ -6,7 +6,7 @@ import { ClassNames } from "@emotion/react";
 import Burger from "./Burger";
 import Link from "next/link";
 
-export function Navbar(props) {
+export default function Navbar(props) {
   const hide = "invisible lg:visible";
   return (
     <div className="relative z-40">

@@ -4,9 +4,7 @@ import About from "./about";
 
 
 
-export function Hometxt() {
-
-
+export default function Hometxt() {
 
   return (
     <div>
