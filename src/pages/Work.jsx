@@ -11,17 +11,20 @@ import React from 'react';
 export default function Work() {
 
     const queryClient = useQueryClient();
-    const { isLoading, data, error, isError } = useQuery('dogs', async () => {
+    const { isLoading, data, error, isError } = useQuery('dogs', () => {
 
-        const res = await fetch('/api/gitSH');
-        const gitAPI = await res.json();
-        const repoAPI = await fetch(gitAPI.repos_url);
-        if (!repoAPI.ok) {
-            console.error("Fetching error!");
-        } else {
-            const data = await repoAPI.json();
-            return data;
-        }
+        return fetch('/api/gitSH')
+        .then(res => res.json())
+        .then(gitAPI => {
+            return fetch(gitAPI.repos_url)
+                .then(res => {
+                    if (!res.ok) {
+                        console.error("Fetching error!");
+                    } else {
+                        return res.json();
+                    }
+                });
+        });
     })
 
     if (isError) {
@@ -41,8 +44,8 @@ export default function Work() {
             </div>
             <div className="lg:grid lg:grid-cols-3 gap-[0.75rem] w-3/4 grid grid-cols-1 lg:mx-0 mx-auto">
                 {
-                    Array.isArray(cachedData) ?
-                        (cachedData.map((d,index) => Array.isArray(d.topics) ?
+                    Array.isArray(data) ?
+                        (data.map((d,index) => Array.isArray(d.topics) ?
                             (
                                 (d.topics.map((topic, key) => topic === "pf" ?
                                     <Card key={key} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :

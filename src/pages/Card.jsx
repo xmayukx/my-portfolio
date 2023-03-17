@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import ExternalLink from './icons/ExternalLink';
-
 import GitHub from "./icons/Github"
 
 export default function Card(props) {
