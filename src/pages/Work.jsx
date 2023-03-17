@@ -28,10 +28,10 @@ export default function Work() {
         console.log(error.message);
     } else if (isLoading) {
         console.log('Loading...');
-    }
+    } 
 
     const cachedData = queryClient.getQueryData('dogs');
-
+    
 
     return (
 
@@ -42,19 +42,19 @@ export default function Work() {
             <div className="lg:grid lg:grid-cols-3 gap-[0.75rem] w-3/4 grid grid-cols-1 lg:mx-0 mx-auto">
                 {
                     Array.isArray(cachedData) ?
-                        (cachedData.map((d) => Array.isArray(d.topics) ?
+                        (cachedData.map((d,key) => Array.isArray(d.topics) ?
                             (
-
-
-                                (d.topics.map((topic, key) => topic === "pf" ?
-                                    <Card id={key} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
-                                    console.log("Somethings wrong 3")))
-
-
+                                <React.Fragment key={key}>
+                                    {
+                                        (d.topics.map((topic,token) => topic === "pf" ?
+                                            <Card id={token} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
+                                        console.log("Somethings wrong 3")))
+                                    }
+                                </React.Fragment>
                             )
                             :
-                            console.log("topics not array"))) :
-                        console.log("data not an array")
+                        console.log("topics not array"))) :
+                    console.log("data not an array")
                 }
             </div>
         </div>
