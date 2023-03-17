@@ -56,9 +56,6 @@ export default function Work() {
                         console.log("topics not array"))) :
                     console.log("data not an array")
                 }
-                {/* {
-                    arr.map((d, key) => <Card key={key} title={d} />)
-                } */}
             </div>
         </div>
 

@@ -24,17 +24,6 @@ export default function Navbar() {
             })
           }
         </ul>
-
-        {/* <li>
-            <Link href="/about">02.<span className="text-slate-50 lg:hover:text-amber-300">Work</span></Link>
-          </li>
-          <li>
-            <Link href="/about">03.<span className="text-slate-50 lg:hover:text-amber-300">Contact</span></Link>
-          </li>
-          <li>
-            <Link href="/about">04.<span className="text-slate-50 lg:hover:text-amber-300">Resume</span></Link>
-          </li> */}
-
       </nav>
     </div>
   );

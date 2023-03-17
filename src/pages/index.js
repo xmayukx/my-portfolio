@@ -1,4 +1,3 @@
-import "../styles/Home.module.css";
 import Navbar from "./Navbar";
 import ReactDOM, { useEffect, useState } from "react";
 import Hometxt from "./Hometxt";

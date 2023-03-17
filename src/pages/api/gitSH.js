@@ -1,6 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-
 const profile = async (request, response) => {
   try {
     const res = await fetch(`https://api.github.com/users/xmayukx`);
@@ -14,7 +11,6 @@ const profile = async (request, response) => {
     response.setHeader('Content-Type', 'application/json')
     response.send({ error: 'Failed to fetch root API' });
   }
-  // console.log(data);
 }
 
 export default profile;
