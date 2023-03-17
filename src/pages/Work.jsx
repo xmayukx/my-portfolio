@@ -47,7 +47,7 @@ export default function Work() {
                                 <React.Fragment key={key}>
                                     {
                                         (d.topics.map((topic,token) => topic === "pf" ?
-                                            <Card id={token} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
+                                            <Card key={token} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
                                         console.log("Somethings wrong 3")))
                                     }
                                 </React.Fragment>
