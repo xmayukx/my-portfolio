@@ -18,7 +18,7 @@ export default function Contact() {
 
             <div className="flex justify-center mt-10 mb-28">
                 <Link href="mailto:hazari.mayukh77@gmail.com">
-                    <button on type="button" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-1 focus:outline-none focus:ring-yellow-300 font-medium rounded-sm text-sm px-10 py-4 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Hola!</button>
+                    <button type="button" className="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-1 focus:outline-none focus:ring-yellow-300 font-medium rounded-sm text-sm px-10 py-4 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Hola!</button>
                 </Link>
             </div>
             <Footer/>
