@@ -11,7 +11,7 @@ export default function Contact() {
                 <span className="montse lg:text-5xl text-4xl  font-extrabold text-slate-50 mb-8" >Get In Touch</span>
             </div>
             <div className="text-center lg:mx-[13.5rem] mx-7">
-                <span className="merri text-slate-400 text-base font-light">I'm always seeking new opportunities to challenge myself and grow my skills. If you have any potential projects or collaborations in mind, please don't hesitate to get in touch.
+                <span className="merri text-slate-400 text-base font-light">I&apos;m always seeking new opportunities to challenge myself and grow my skills. If you have any potential projects or collaborations in mind, please don&apos;t hesitate to get in touch.
 
                     Thanks for stopping by, and I look forward to hearing from you!</span>
             </div>
