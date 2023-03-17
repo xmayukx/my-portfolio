@@ -42,7 +42,7 @@ export default function Work() {
             <div className="lg:grid lg:grid-cols-3 gap-[0.75rem] w-3/4 grid grid-cols-1 lg:mx-0 mx-auto">
                 {
                     Array.isArray(cachedData) ?
-                        (cachedData.map((d) => Array.isArray(d.topics) ?
+                        (cachedData.map((d,index) => Array.isArray(d.topics) ?
                             (
                                 (d.topics.map((topic, key) => topic === "pf" ?
                                     <Card key={key} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
