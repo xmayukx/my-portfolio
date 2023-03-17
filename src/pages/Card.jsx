@@ -4,7 +4,7 @@ import ExternalLink from './icons/ExternalLink';
 import GitHub from "./icons/Github"
 
 export default function Card(props) {
-    const {title, description, repoLink, exLink} = props;
+    const { title, description, repoLink, exLink } = props;
     return (
         <div>
             <div className="relative mb-5 lg:mb-0 p-7 lg:h-[20rem] h-[16rem]  bg-gray-800 rounded-lg shadow hover:bg-transparent dark:bg-gray-800 dark:border-gray-700 inco w-4.5/5 hover:border hover:border-gray-700">
@@ -17,9 +17,11 @@ export default function Card(props) {
                     {description}
                 </p>
                 <div className="flex absolute bottom-5 gap-11 ">
-                    <Link href={repoLink}>
-                        <GitHub />
-                    </Link>
+                    {
+                        repoLink && <Link href={repoLink}>
+                            <GitHub />
+                        </Link>
+                    }
                     {
                         exLink && <Link href={exLink}>
                             <ExternalLink />
