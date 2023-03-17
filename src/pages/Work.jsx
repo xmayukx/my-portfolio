@@ -48,7 +48,7 @@ export default function Work() {
                         (data.map((d,index) => Array.isArray(d.topics) ?
                             (
                                 (d.topics.map((topic, key) => topic === "pf" ?
-                                    <Card key={key} title={d.name} description={d.description} repoLink={d.html_url} exlink={d.homepage} /> :
+                                    <Card key={key} title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} /> :
                                     console.log("Somethings wrong 3")))
                             )
                             :
