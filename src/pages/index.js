@@ -1,17 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
 import "../styles/Home.module.css";
 import Navbar from "./Navbar";
-import SwipeableEdgeDrawer from "./Drawer";
 import ReactDOM, { useEffect, useState } from "react";
 import Hometxt from "./Hometxt";
+import Dock from "./Dock";
 
 export default function Home() {
 
   return (
     <div>
       <Navbar />
+      <Dock/>
       <Hometxt />
     </div>
   );
