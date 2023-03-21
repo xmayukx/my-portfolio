@@ -6,6 +6,7 @@ import Head from "next/head";
 import About from "./about";
 import Contact from "./Contact";
 import Work from "./Work";
+import Link from "next/link";
 
 export default function Home() {
 
