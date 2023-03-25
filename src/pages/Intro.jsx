@@ -8,23 +8,28 @@ import Typewriter from 'typewriter-effect';
 export default function Hometxt() {
 
   return (
-    <div className="relative top-[12rem] flex flex-col">
-      <span className="robo text-yellow-300">Hi, my name is</span>
-      <span className="text-slate-200 mt-[1px] montse text-4xl font-extrabold">Mayukh Hazari</span>
-
-      <div className="flex text-slate-400 mt-[1px] montse text-4xl font-extrabold">
-        <span className="mr-[10px]">I&apos;m a</span>
-        <span>
-          <Typewriter
-            options={{
-              strings: ['developer', 'reader', 'writer'],
-              autoStart: true,
-              loop: true,
-              changeDeleteSpeed: "natural"
-            }}
-          />
-        </span>
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-col">
+        <span className="robo text-yellow-300">Hi, my name is</span>
+        <span className="text-slate-200 mt-[1px] montse text-4xl font-extrabold">Mayukh Hazari</span>
+        <div className="flex text-slate-400 mt-[1px] montse text-4xl font-extrabold">
+          <span className="mr-[10px]">I&apos;m a</span>
+          <span>
+            <Typewriter
+              options={{
+                strings: ['developer', 'reader', 'writer'],
+                autoStart: true,
+                loop: true,
+                changeDeleteSpeed: "natural"
+              }}
+            />
+          </span>
+        </div>
       </div>
+
+      <span className="text-slate-50 merri font-thin">
+        Transforming ideas into seamless digital experiences through full-stack development and occasional design expertise.
+      </span>
     </div>
   );
 }
