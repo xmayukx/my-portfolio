@@ -1,8 +1,8 @@
 import Link from "next/link";
 import GitHub from "./icons/Github";
-import IconInstagram from "./icons/Instagram";
-import IconLinkedin from "./icons/LinkedIn";
-import IconTwitter from "./icons/Twitter";
+import Instagram from "./icons/Instagram";
+import Linkedin from "./icons/LinkedIn";
+import Twitter from "./icons/Twitter";
 
 export default function Dock() {
     return (
@@ -13,13 +13,13 @@ export default function Dock() {
                         <li><GitHub /></li>
                     </Link>
                     <Link href="https://twitter.com/xmayuk_hx" className="transition ease-in-out">
-                        <li><IconTwitter /></li>
+                        <li><Twitter /></li>
                     </Link>
                     <Link href="https://www.instagram.com/xmayuk_hx/">
-                        <li><IconInstagram /></li>
+                        <li><Instagram /></li>
                     </Link>
                     <Link href="https://www.linkedin.com/in/mayukh-hazari-212276220">
-                        <li><IconLinkedin /></li>
+                        <li><Linkedin /></li>
                     </Link>
                 </ul>
 

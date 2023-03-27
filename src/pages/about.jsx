@@ -35,7 +35,7 @@ export default function About() {
                 </div>
 
                 <div className="flex lg:justify-end justify-center">
-                    <Image src="/assets/me.png" alt="me" width="640" height="640" className="rounded-xl lg:h-[20rem] lg:w-[19.5rem] w-2/3 grayscale hover:grayscale-0" />
+                    <Image src="/assets/me.png" alt="me" width="640" height="640" className="rounded-xl lg:h-[20rem] lg:w-[19.5rem] w-2/3 grayscale hover:grayscale-0 delay-400" />
                 </div>
             </div>
         </div>

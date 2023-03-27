@@ -17,13 +17,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className="mx-[1.85rem] lg:mx-[20.5rem] flex justify-start flex-col pt-[8.5rem]">
-    
-
         {/* <Dock /> */}
         <Intro />
         <About />
-        {/* <Work />
-        <Contact /> */}
+        <Work />
+        {/* <Contact /> */}
       </div>
     </div>
   );

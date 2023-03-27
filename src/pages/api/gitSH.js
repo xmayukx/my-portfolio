@@ -1,15 +1,26 @@
-const profile = async (request, response) => {
+import { Octokit } from "octokit";
+
+const profile = async (req, res) => {
   try {
-    const res = await fetch(`https://api.github.com/users/xmayukx`);
-    const data = await res.json();
-    response.statusCode = 200
-    response.setHeader('Content-Type', 'application/json')
-    response.send(data);
+
+    const octokit = new Octokit({
+      auth: process.env.GITHUB_TOKEN,
+    })
+
+    const repo = await octokit.request('GET /user/repos', {
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      },
+      visibility: 'public',
+      affiliation: ['owner'],
+    })
+    res.send(repo.data);
+
   }
   catch {
-    response.statusCode = 500
-    response.setHeader('Content-Type', 'application/json')
-    response.send({ error: 'Failed to fetch root API' });
+    res.statusCode = 500
+    res.setHeader('Content-Type', 'application/json')
+    res.send({ error: 'Failed to fetch repos' });
   }
 }
 

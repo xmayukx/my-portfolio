@@ -3,31 +3,31 @@ import React, { useEffect } from 'react';
 import ExternalLink from './icons/ExternalLink';
 import GitHub from "./icons/Github"
 
+
+
+
 export default function Card(props) {
     const { title, description, repoLink, exLink } = props;
     return (
         <div>
-            <div className="relative mb-5 lg:mb-0 p-7 lg:h-[20rem] h-[16rem]  bg-gray-800 rounded-lg shadow hover:bg-transparent dark:bg-gray-800 dark:border-gray-700 inco w-4.5/5 hover:border hover:border-gray-700">
-                <a>
-                    <h5 className="mb-2 lg:text-2xl text-lg font-semibold tracking-tight text-yellow-300">
-                        {title}
-                    </h5>
-                </a>
-                <p className="mb-3 font-normal lg:text-base text-sm  text-gray-100 dark:text-gray-400">
-                    {description}
-                </p>
-                <div className="flex absolute bottom-5 gap-11 ">
-                    {
-                        repoLink && <Link href={repoLink}>
-                            <GitHub />
-                        </Link>
-                    }
-                    {
-                        exLink && <Link href={exLink}>
-                            <ExternalLink />
-                        </Link>
-                    }
+            <div className="card w-[15rem] h-[17rem] bg-base-100 shadow-lg inco">
+                <div className="card-body">
+                    <h2 className="card-title text-lg text-amber-300">{title}</h2>
+                    <p className="text-xs">{description}</p>
+                    <div className="card-actions flex justify-start flex-row gap-7">
 
+                        {
+                            repoLink && <Link href={repoLink}>
+                                <GitHub />
+                            </Link>
+                        }
+
+                        {
+                            exLink && <Link href={repoLink}>
+                                <ExternalLink />
+                            </Link>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
