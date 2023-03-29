@@ -3,7 +3,7 @@ import ReactDOM, { useEffect, useState } from "react";
 import Intro from "./Intro";
 import Dock from "./Dock";
 import Head from "next/head";
-import About from "./About";
+import About from "./about";
 import Contact from "./Contact";
 import Work from "./Work";
 import Link from "next/link";
