@@ -13,7 +13,7 @@ export default function Navbar() {
             navLinks.map((link, key) => {
               return (
                 <Link key={key} href={link.path} className="">
-                  <li className="text-slate-50 lg:hover:text-amber-300 text-xs font-semibold">
+                  <li className="text-slate-50 lg:hover:text-amber-300 text-xs lg:text-sm font-semibold">
                     <span className="text-amber-300">{link.index}.</span>  {link.name}
                   </li>
                 </Link>

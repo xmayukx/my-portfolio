@@ -41,7 +41,7 @@ export default function Work() {
                             (
                                 (d.topics.map((topic, key) => topic === "pf" &&
                                     <div className="carousel-item">
-                                        <Card key={key} title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
+                                        <Card id={key}  title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
                                     </div>
                                 ))
                             )

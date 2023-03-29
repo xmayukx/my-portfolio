@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Linkedin = () => (
-    <img src='./assets/linkedin.svg' className="w-3/4" />
+    <Image src='./assets/linkedin.svg' className="w-3/4" width={24} height={24}/>
 );
 
 export default Linkedin;
