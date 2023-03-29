@@ -9,7 +9,7 @@ import GitHub from "./icons/Github"
 export default function Card(props) {
     const { title, description, repoLink, exLink } = props;
     return (
-        <div>
+        <>
             <div className="card w-[15rem] h-[17rem] bg-base-100 shadow-lg inco">
                 <div className="card-body">
                     <h2 className="card-title text-lg text-amber-300">{title}</h2>
@@ -30,6 +30,6 @@ export default function Card(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
