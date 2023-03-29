@@ -40,8 +40,8 @@ export default function Work() {
                         (data.map((d, index) => Array.isArray(d.topics) ?
                             (
                                 (d.topics.map((topic, k) => topic === "pf" &&
-                                    <div className="carousel-item">
-                                        <Card key={k}  title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
+                                    <div key={k} className="carousel-item">
+                                        <Card title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
                                     </div>
                                 ))
                             )
