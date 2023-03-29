@@ -39,9 +39,9 @@ export default function Work() {
                     Array.isArray(data) ?
                         (data.map((d, index) => Array.isArray(d.topics) ?
                             (
-                                (d.topics.map((topic, key) => topic === "pf" &&
+                                (d.topics.map((topic, k) => topic === "pf" &&
                                     <div className="carousel-item">
-                                        <Card id={key}  title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
+                                        <Card key={k}  title={d.name} description={d.description} repoLink={d.html_url} exLink={d.homepage} />
                                     </div>
                                 ))
                             )
