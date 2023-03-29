@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function About() {
-
-
     return (
-
-
         <div className='text-slate-200 mt-[15rem]' id="about">
 
             <div className="text-slate-100 robo mb-6">
