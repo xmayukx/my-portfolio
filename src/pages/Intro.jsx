@@ -53,7 +53,7 @@ export default function Intro() {
             <Twitter />
           </div>
         </Link>
-        <Link href="https://www.instagram.com/xmayuk_hx/" target="_blank">
+        <Link href="https://www.instagram.com/mayuk.png/" target="_blank">
           <div className="w-7 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <Instagram />
           </div>
